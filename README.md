@@ -1,4 +1,4 @@
 # responsiveD2
 
-status!: WIP
+status!: finished
 view: https://responsived2-andrec.netlify.app/
