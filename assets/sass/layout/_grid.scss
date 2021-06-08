@@ -22,17 +22,17 @@
 
 @include respond-to("medium") {
   .container {
-    height: 100vh;
-    grid-template-areas: "navbar" "contenido" "newsletter" "footer";
-    grid-template-rows: 15vh 17fr 16fr 2fr;
-    grid-template-columns: 1fr;
+    grid-template-areas: "navbar navbar" "newsletter contenido" "footer contenido";
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr;
+    position: relative;
   }
 }
 
 @include respond-to("large") {
   .container {
-    grid-template-areas: "navbar navbar" "contenido contenido" "newsletter contenido" "footer contenido";
-    grid-template-rows: 1fr 5fr 1fr 1fr;
+    grid-template-areas: "navbar" "contenido" "newsletter" "footer";
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-columns: 8fr 1fr;
     position: relative;
   }
