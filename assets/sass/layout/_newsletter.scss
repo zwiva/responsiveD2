@@ -1,5 +1,5 @@
 .newsletter {
-  width: 960px;
+  // width: 960px;
   background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
@@ -10,8 +10,8 @@
   font-size: 24px
 }
 
-.group input,
-.group button {
+.newsletter__group input,
+.newsletter__group button {
   display: inline-block;
   border-width: 0;
   font-size: 13px;
@@ -19,7 +19,7 @@
 
 }
 
-.group button {
+.newsletter__group button {
   background-color: coral;
   color: white;
 }

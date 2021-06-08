@@ -20,7 +20,7 @@
   grid-area: footer;
 }
 
-@media (min-width: 576px) {
+@include respond-to("medium") {
   .container {
     height: 100vh;
     grid-template-areas: "navbar" "contenido" "newsletter" "footer";
@@ -29,11 +29,11 @@
   }
 }
 
-@media (min-width: 992px) {
+@include respond-to("large") {
   .container {
-    grid-template-areas: "navbar navbar" "contenido contenido" "footer footer";
-    grid-template-rows: 10vh 5fr 3fr;
-    grid-template-columns: 1fr 45vw;
+    grid-template-areas: "navbar navbar" "contenido contenido" "newsletter contenido" "footer contenido";
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr;
     position: relative;
   }
 }

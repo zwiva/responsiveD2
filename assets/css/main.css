@@ -45,11 +45,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container {
-    grid-template-areas: "navbar navbar" "contenido contenido" "footer footer";
-    grid-template-rows: 10vh 5fr 3fr;
-    grid-template-columns: 1fr 45vw;
+    grid-template-areas: "navbar navbar" "contenido contenido" "newsletter contenido" "footer contenido";
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr;
     position: relative;
   }
 }
@@ -82,68 +82,57 @@ body {
 }
 
 .contenido {
-  /* width: 960px; */
-  margin: 0 auto;
+  display: flex;
 }
 
-.listado-noticias {
-  /* width: 700px; */
-  float: left;
-}
-
-.noticia {
-  width: 210px;
-  display: inline-block;
+.main__noticia {
+  width: 90%;
+  align-items: center;
+  box-sizing: content-box;
   margin: 5px;
   cursor: pointer;
 }
-
-.cuerpo img {
-  width: 210px;
+.main__noticia--cuerpo img {
+  width: 100%;
   height: 300px;
 }
-
-.cuerpo p {
+.main__noticia--cuerpo p {
   padding: 5px 10px;
 }
 
-.listado-izquierdo {
-  /* width: 220px; */
-  float: right;
+.listado {
+  display: none;
 }
-
-.cabecera-listado {
-  width: 220px;
-  border-bottom: 1px solid gray;
-}
-
-.tags {
-  border-bottom: 1px solid gray;
-}
-
-.tags ul {
-  padding: 0;
-  list-style: none;
-}
-
-.tags ul li {
-  padding: 2px 4px;
-  background-color: steelblue;
-  margin-right: 1px;
-  color: white;
-}
-
-.noticias-destacadas {
-  margin-bottom: 50px;
-}
-
-.noticias-destacadas img {
-  width: 220px;
-  height: 200px;
+@media (min-width: 576px) {
+  .listado {
+    display: block;
+    float: right;
+  }
+  .listado__cabecera {
+    border-bottom: 1px solid gray;
+  }
+  .listado__tags {
+    border-bottom: 1px solid gray;
+  }
+  .listado__tags ul {
+    padding: 0;
+    list-style: none;
+  }
+  .listado__tags ul li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+  }
+  .listado__noticias-destacadas {
+    margin-bottom: 50px;
+  }
+  .listado__noticias-destacadas img {
+    height: 200px;
+  }
 }
 
 .newsletter {
-  width: 960px;
   background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
@@ -154,15 +143,15 @@ body {
   font-size: 24px;
 }
 
-.group input,
-.group button {
+.newsletter__group input,
+.newsletter__group button {
   display: inline-block;
   border-width: 0;
   font-size: 13px;
   padding: 5px 10px;
 }
 
-.group button {
+.newsletter__group button {
   background-color: coral;
   color: white;
 }

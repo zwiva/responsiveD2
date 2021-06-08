@@ -1,16 +1,17 @@
 // main.scss # Manifest File
 // abstracts
-// @import 'abstracts/variables'; //pendiente
+@import 'abstracts/variables'; 
+@import 'abstracts/mixins';
 // Base
-@import 'base/reset'; //ok
-@import 'base/typography'; //ok
-@import 'base/base'; //ok
+@import 'base/reset'; 
+@import 'base/typography'; 
+@import 'base/base'; 
 // Layout
-@import 'layout/grid'; // ok
-@import 'layout/navbar'; // ok
-@import 'layout/contenido'; // ok
-@import 'layout/newsletter'; // ok
-@import 'layout/footer'; // ok
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/contenido';
+@import 'layout/newsletter';
+@import 'layout/footer';
 // Components
 // @import 'components/buttons'; //pendiente
 // @import 'components/inputs'; //pendiente
