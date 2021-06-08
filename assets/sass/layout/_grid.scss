@@ -1,0 +1,39 @@
+//base mobile
+.contenedor {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas: "navbar" "contenido" "newsletter" "footer";
+  grid-template-rows: 1fr 12fr 12fr 2fr;
+  grid-template-columns: 1fr;
+}
+.navbar {
+  grid-area: navbar;
+}
+.section_img {
+  grid-area: contenido;
+}
+.article {
+  grid-area: newsletter;
+}
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width: 576px) {
+  .container {
+    height: 100vh;
+    grid-template-areas: "navbar" "contenido" "newsletter" "footer";
+    grid-template-rows: 15vh 17fr 16fr 2fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template-areas: "navbar navbar" "contenido contenido" "footer footer";
+    grid-template-rows: 10vh 5fr 3fr;
+    grid-template-columns: 1fr 45vw;
+    position: relative;
+  }
+}
