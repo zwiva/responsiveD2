@@ -7,6 +7,10 @@
 
   @include respond-to("large") {
     grid-template-areas: "main" "listado";
+    grid-template-columns: 65% 1fr;
+  }
+  @include respond-to("huge") {
+    grid-template-areas: "main" "listado";
     grid-template-columns: 78% 1fr;
   }
 }
@@ -25,7 +29,7 @@
     cursor: pointer;
   }
   &__noticia--cuerpo img {
-    width: 90%;
+    width: 70%;
     height: auto;
   }
   &__noticia--cuerpo p {
@@ -36,6 +40,10 @@
     //comportamiento tablet
     &__noticia {
       width: 47%;
+    }
+    &__noticia--cuerpo img {
+      width: 75%;
+      height: auto;
     }
   }
   @include respond-to("huge") {

@@ -20,20 +20,21 @@
   grid-area: footer;
 }
 
+// no se aplican - rehacer
 @include respond-to("medium") {
-  .container {
-    grid-template-areas: "navbar navbar" "newsletter contenido" "footer contenido";
-    grid-template-rows: 1fr 5fr 1fr 1fr;
-    grid-template-columns: 8fr 1fr;
-    position: relative;
-  }
+  // .contenedor {
+  //   grid-template-areas: "navbar navbar" "newsletter contenido" "footer contenido";
+  //   grid-template-rows: 1fr 5fr 1fr 1fr;
+  //   grid-template-columns: 8fr 1fr;
+  //   position: relative;
+  // }
 }
 
 @include respond-to("large") {
-  .container {
-    grid-template-areas: "navbar" "contenido" "newsletter" "footer";
-    grid-template-rows: 1fr 2fr 1fr 1fr;
-    grid-template-columns: 8fr 1fr;
-    position: relative;
-  }
+  // .contenedor {
+  //   grid-template-areas: "navbar" "contenido" "newsletter" "footer";
+  //   grid-template-rows: 1fr 2fr 1fr 1fr;
+  //   grid-template-columns: 8fr 1fr;
+  //   position: relative;
+  // }
 }
